@@ -1,5 +1,4 @@
 $(function() {
-  // Button will be disabled until we type anything inside the input field
   const source = document.getElementById('autoComplete');
   const inputHandler = function(e) {
     if(e.target.value==""){
@@ -12,7 +11,7 @@ $(function() {
   source.addEventListener('input', inputHandler);
 
   $('.movie-button').on('click',function(){
-    var my_api_key = '268b11c4d32d6f2b166ddb0f8fc697fd';
+    var my_api_key = 'ENTER YOUR API KEY HERE';
     var title = $('.movie').val();
     if (title=="") {
       $('.results').css('display','none');
@@ -26,7 +25,7 @@ $(function() {
 
 // will be invoked when clicking on the recommended movies
 function recommendcard(e){
-  var my_api_key = '268b11c4d32d6f2b166ddb0f8fc697fd';
+  var my_api_key = 'ENTER YOUR API KEY HERE';
   var title = e.getAttribute('title'); 
   load_details(my_api_key,title);
 }
